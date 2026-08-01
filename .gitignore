@@ -1,24 +1,36 @@
-# Nestjs specific
-/dist
-/node_modules
-/build
-/tmp
+# Dependencias
+node_modules/
+/.pnp
+.pnp.js
 
-# Logs
-logs
-*.log
+# Testing
+coverage/
+
+# Compilación y producción de Next.js
+.next/
+out/
+
+# Archivos de log
 npm-debug.log*
-pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 lerna-debug.log*
 
-# dotenv environment variable files
+# Variables de entorno (¡Contienen contraseñas y llaves secretas!)
 .env
-.env.development
-.env.test
-.env.production
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# temp directory
-.temp
-.tmp
+# Archivos de configuración de variables de entorno de Next.js
+.env*.local
+
+# Caché de herramientas (Turbo, Vercel, etc.)
+.turbo/
+.vercel/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
